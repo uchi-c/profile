@@ -1,79 +1,42 @@
-# Uchi Chinyama — Portfolio
-**Shadow Root Security Technologies**
+# Uchi Chinyama — Premium Cybersecurity Portfolio
 
-A production-ready multi-page portfolio with Node.js/Express backend.
+A production-ready **Next.js + TypeScript + Tailwind CSS** personal portfolio for Uchi Chinyama.
 
----
+## Stack
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- lucide-react
+- Formspree React (`@formspree/react`)
 
-## 🚀 Quick Start
-
-### 1. Install dependencies
+## Quick Start
 ```bash
 npm install
+npm run dev
 ```
+Open `http://localhost:3000`.
 
-### 2. Run the server
+## Build
 ```bash
-npm start
+npm run build
+npm run start
 ```
 
-Open **http://localhost:3000** in your browser.
+## Where to edit personal details and links
+Update all profile, venture, and link values in:
+- `lib/site-config.ts`
 
-> For development with auto-reload:
-> ```bash
-> npm install -g nodemon
-> npm run dev
-> ```
+This includes placeholders such as:
+- `[PORTFOLIO_DOMAIN]`
+- `[GITHUB_URL]`
+- `[SHADOW_ROOT_LINK]`
+- `[URUU_DEMO_LINK]`
+- `[CV_LINK]`
 
----
+## Contact Form
+Formspree is integrated through:
+- `components/forms/contact-form.tsx`
 
-## 📁 Project Structure
-
-```
-uchi-portfolio/
-├── server.js              # Express backend
-├── package.json
-└── public/
-    ├── index.html         # Main portfolio page
-    ├── projects.html      # Projects page (GitHub-linked)
-    ├── style.css          # Shared styles
-    ├── shared.js          # Shared JS (cursor, reveal, nav)
-    └── images/
-        └── uchi.jpeg      # Profile photo
-```
-
----
-
-## 🔌 API Endpoints
-
-| Method | Route | Description |
-|--------|-------|-------------|
-| `GET`  | `/`   | Main portfolio page |
-| `GET`  | `/projects` | Projects page |
-| `POST` | `/api/contact` | Contact form submission |
-| `GET`  | `/api/github-projects` | Proxied GitHub repos for uchi-c |
-
----
-
-## ☁️ Deploy to Render / Railway / Fly.io
-
-1. Push this folder to a GitHub repo
-2. Connect to [Render.com](https://render.com) (free tier)
-3. Set **Start Command**: `node server.js`
-4. Set **Port**: `3000`
-
-Done — live in under 2 minutes.
-
----
-
-## 📧 Contact Form
-
-The `/api/contact` route currently logs submissions to the console.
-To forward emails, add your SMTP credentials and uncomment the `nodemailer` block in `server.js`.
-
-```env
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USER=uchichinyama@gmail.com
-SMTP_PASS=your_app_password
-```
+Form ID in use:
+- `xnjlowjp`
