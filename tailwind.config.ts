@@ -1,25 +1,30 @@
 import type { Config } from "tailwindcss";
 
-const config: Config = {
-  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./lib/**/*.{ts,tsx}"],
+export default {
+  darkMode: ["class"],
+  content: [
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./lib/**/*.{ts,tsx}"
+  ],
   theme: {
     extend: {
       colors: {
-        ink: "#060a11",
-        panel: "#0f1726",
-        panelSoft: "#111d30",
-        accent: "#1bd6a2",
-        accentSoft: "#15342e"
+        background: "#060a10",
+        panel: "#0b1420",
+        card: "#101b2a",
+        muted: "#99a6bc",
+        accent: "#20d89f",
+        line: "rgba(148, 163, 184, 0.2)"
       },
       boxShadow: {
-        glow: "0 0 0 1px rgba(27, 214, 162, 0.18), 0 24px 60px rgba(2, 10, 24, 0.65)"
+        glow: "0 0 0 1px rgba(32,216,159,0.2), 0 10px 40px rgba(0,0,0,0.5)"
       },
       backgroundImage: {
-        mesh: "radial-gradient(circle at 15% 10%, rgba(27, 214, 162, 0.12), transparent 40%), radial-gradient(circle at 80% 0%, rgba(58, 132, 255, 0.08), transparent 40%)"
+        radial:
+          "radial-gradient(1200px 700px at 20% -20%, rgba(32,216,159,0.15), transparent 60%), radial-gradient(900px 500px at 90% 0%, rgba(59,130,246,0.12), transparent 55%)"
       }
     }
   },
   plugins: []
-};
-
-export default config;
+} satisfies Config;

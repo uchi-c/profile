@@ -7,27 +7,5 @@
 }
 
 body {
-  min-height: 100vh;
-}
-
-@layer components {
-  .card {
-    @apply rounded-2xl border border-white/10 bg-panel/80 p-6 shadow-glow backdrop-blur;
-  }
-
-  .section-wrap {
-    @apply mx-auto w-full max-w-6xl px-6 py-16 md:py-24;
-  }
-
-  .kicker {
-    @apply mb-4 inline-flex rounded-full border border-accent/40 bg-accentSoft px-3 py-1 text-xs uppercase tracking-[0.18em] text-accent;
-  }
-
-  .btn-primary {
-    @apply inline-flex items-center justify-center rounded-full border border-accent bg-accent px-5 py-2.5 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:brightness-110;
-  }
-
-  .btn-ghost {
-    @apply inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-5 py-2.5 text-sm font-medium text-slate-100 transition hover:border-accent/70 hover:text-accent;
-  }
+  margin: 0;
 }
